@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Site</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="../../aditya kulkarni main/css/asset/icon/fontawesome-free-5.15.1-web/css/all.min.css"> -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
+        integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="card mt-5">
+                    <div class="card-header">Movie App</div>
+                    <div class="card-body">
+                        <div class="d-flex">
+                            <select class="form-select" id="select_movie" onclick="selectbutton()">
+                                <option value="">Choose Your Movie</option>
+                                <option value="movie1">movie1</option>
+                                <option value="movie2">movie2</option>
+                                <option value="movie3">movie3</option>
+                            </select>
+
+
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-md-3">
+
+                                <i id="s1" onclick="seat(`s1`)" class="fas fa-couch fa-lg"></i>
+                                <i id="s2" onclick="seat(`s2`)" class="fas fa-couch fa-lg"></i>
+                                <i id="s3" onclick="seat(`s3`)" class="fas fa-couch fa-lg"></i>
+                                <i id="s4" onclick="seat(`s4`)" class="fas fa-couch fa-lg"></i>
+                                <i id="s5" onclick="seat(`s5`)" class="fas fa-couch fa-lg"></i>
+                                <i id="s6" onclick="seat(`s6`)" class="fas fa-couch fa-lg"></i>
+                                <i id="s7" onclick="seat(`s7`)" class="fas fa-couch fa-lg"></i>
+                                <i id="s8" onclick="seat(`s8`)" class="fas fa-couch fa-lg"></i>
+                                <i id="s9" onclick="seat(`s9`)" class="fas fa-couch fa-lg"></i>
+                                <i id="s10" onclick="seat(`s10`)" class="fas fa-couch fa-lg"></i>
+                                <i id="s11" onclick="seat(`s11`)" class="fas fa-couch fa-lg"></i>
+                                <i id="s12" onclick="seat(`s12`)" class="fas fa-couch fa-lg"></i>
+                            </div>
+                            <div class="col">
+                                <i id="s13" onclick="seat(`s13`)" class="fas fa-couch fa-lg"></i>
+                                <i id="s14" onclick="seat(`s14`)" class="fas fa-couch fa-lg"></i>
+                                <i id="s15" onclick="seat(`s15`)" class="fas fa-couch fa-lg"></i>
+                                <i id="s16" onclick="seat(`s16`)" class="fas fa-couch fa-lg"></i>
+                                <i id="s17" onclick="seat(`s17`)" class="fas fa-couch fa-lg"></i>
+                                <i id="s18" onclick="seat(`s18`)" class="fas fa-couch fa-lg"></i>
+                                <i id="s19" onclick="seat(`s19`)" class="fas fa-couch fa-lg"></i>
+                                <i id="s20" onclick="seat(`s20`)" class="fas fa-couch fa-lg"></i>
+                                <i id="s21" onclick="seat(`s21`)" class="fas fa-couch fa-lg"></i>
+                                <i id="s22" onclick="seat(`s22`)" class="fas fa-couch fa-lg"></i>
+                                <i id="s23" onclick="seat(`s23`)" class="fas fa-couch fa-lg"></i>
+                                <i id="s24" onclick="seat(`s24`)" class="fas fa-couch fa-lg"></i>
+                                <i id="s25" onclick="seat(`s25`)" class="fas fa-couch fa-lg"></i>
+                                <i id="s26" onclick="seat(`s26`)" class="fas fa-couch fa-lg"></i>
+                                <i id="s27" onclick="seat(`s27`)" class="fas fa-couch fa-lg"></i>
+                                <i id="s28" onclick="seat(`s28`)" class="fas fa-couch fa-lg"></i>
+                                <i id="s29" onclick="seat(`s29`)" class="fas fa-couch fa-lg"></i>
+                                <i id="s30" onclick="seat(`s30`)" class="fas fa-couch fa-lg"></i>
+                                <i id="s31" onclick="seat(`s31`)" class="fas fa-couch fa-lg"></i>
+                                <i id="s32" onclick="seat(`s32`)" class="fas fa-couch fa-lg"></i>
+                                <i id="s33" onclick="seat(`s33`)" class="fas fa-couch fa-lg"></i>
+                                <i id="s34" onclick="seat(`s34`)" class="fas fa-couch fa-lg"></i>
+                                <i id="s35" onclick="seat(`s35`)" class="fas fa-couch fa-lg"></i>
+                                <i id="s36" onclick="seat(`s36`)" class="fas fa-couch fa-lg"></i>
+                                <i id="s37" onclick="seat(`s37`)" class="fas fa-couch fa-lg"></i>
+                                <i id="s38" onclick="seat(`s38`)" class="fas fa-couch fa-lg"></i>
+                                <i id="s39" onclick="seat(`s39`)" class="fas fa-couch fa-lg"></i>
+                                <i id="s40" onclick="seat(`s40`)" class="fas fa-couch fa-lg"></i>
+                            </div>
+                            <div class="col-md-3">
+                                <i id="s41" onclick="seat(`s41`)" class="fas fa-couch fa-lg"></i>
+                                <i id="s42" onclick="seat(`s42`)" class="fas fa-couch fa-lg"></i>
+                                <i id="s43" onclick="seat(`s43`)" class="fas fa-couch fa-lg"></i>
+                                <i id="s44" onclick="seat(`s44`)" class="fas fa-couch fa-lg"></i>
+                                <i id="s45" onclick="seat(`s45`)" class="fas fa-couch fa-lg"></i>
+                                <i id="s46" onclick="seat(`s46`)" class="fas fa-couch fa-lg"></i>
+                                <i id="s47" onclick="seat(`s47`)" class="fas fa-couch fa-lg"></i>
+                                <i id="s48" onclick="seat(`s48`)" class="fas fa-couch fa-lg"></i>
+                                <i id="s49" onclick="seat(`s49`)" class="fas fa-couch fa-lg"></i>
+                                <i id="s50" onclick="seat(`s50`)" class="fas fa-couch fa-lg"></i>
+                                <i id="s51" onclick="seat(`s51`)" class="fas fa-couch fa-lg"></i>
+                                <i id="s52" onclick="seat(`s52`)" class="fas fa-couch fa-lg"></i>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="h-25 w-100 border border-danger text-center mt-4">Screen</div>
+                    <button id="booking" class="btn btn-warning w-100 mt-4">Book Ticket</button>
+
+                </div>
+                <div id="output"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var btnbooking = document.querySelector("#booking");
+        var movieSelecting = document.querySelector("#select_movie");
+        // var selectbutton = document.querySelector("#selectbtn");
+
+        function selectbutton() {
+            var movie1array = JSON.parse(localStorage.getItem("seatformovie1"));
+            var movie2array = JSON.parse(localStorage.getItem("seatformovie2"));
+            var movie3array = JSON.parse(localStorage.getItem("seatformovie3"));
+            console.log(movie1array);
+            console.log(movie2array);
+            console.log(movie3array);
+
+            if (movieSelecting.value == "movie1") {
+                mymovie = "movie1";
+                if (movie2array != null) {
+                    for (let index = 0; index < movie2array.length; index++) {
+
+                        document.querySelector(`#${movie2array[index]}`).classList.remove("text-danger");
+                        document.querySelector(`#${movie2array[index]}`).classList.remove("text-success");
+
+
+                    }
+                }
+                if (movie3array != null) {
+                    for (let index = 0; index < movie3array.length; index++) {
+
+
+                        document.querySelector(`#${movie3array[index]}`).classList.remove("text-danger");
+                        document.querySelector(`#${movie3array[index]}`).classList.remove("text-success");
+
+                    }
+                }
+                if (movie1array != null) {
+                    for (let index = 0; index < movie1array.length; index++) {
+
+
+                        document.querySelector(`#${movie1array[index]}`).classList.add("text-danger");
+
+
+                    }
+                }
+
+            }
+
+            if (movieSelecting.value == "movie2") {
+
+                mymovie = "movie2";
+                if (movie1array != null) {
+                    for (let index = 0; index < movie1array.length; index++) {
+
+                        document.querySelector(`#${movie1array[index]}`).classList.remove("text-danger");
+                        document.querySelector(`#${movie1array[index]}`).classList.remove("text-success");
+
+
+                    }
+                }
+                if (movie3array != null) {
+
+                    for (let index = 0; index < movie3array.length; index++) {
+
+
+                        document.querySelector(`#${movie3array[index]}`).classList.remove("text-danger");
+                        document.querySelector(`#${movie3array[index]}`).classList.remove("text-success");
+
+                    }
+                }
+                if (movie2array != null) {
+                    for (let index = 0; index < movie2array.length; index++) {
+
+
+                        document.querySelector(`#${movie2array[index]}`).classList.add("text-danger");
+
+
+                    }
+                }
+
+
+            }
+
+            if (movieSelecting.value == "movie3") {
+
+                mymovie = "movie3";
+                if (movie1array != null) {
+                    for (let index = 0; index < movie1array.length; index++) {
+
+                        document.querySelector(`#${movie1array[index]}`).classList.remove("text-danger");
+                        document.querySelector(`#${movie1array[index]}`).classList.remove("text-success");
+
+
+                    }
+                }
+                if (movie2array != null) {
+                    for (let index = 0; index < movie2array.length; index++) {
+
+
+                        document.querySelector(`#${movie2array[index]}`).classList.remove("text-danger");
+                        document.querySelector(`#${movie2array[index]}`).classList.remove("text-success");
+
+                    }
+                }
+                if (movie3array != null) {
+                    for (let index = 0; index < movie3array.length; index++) {
+
+
+                        document.querySelector(`#${movie3array[index]}`).classList.add("text-danger");
+
+
+                    }
+                }
+
+            }
+
+        }
+
+
+
+        function seat(seatno) {
+            if (document.querySelector(`#${seatno}`).classList.contains("text-success")) {
+
+            }
+            var isgreen = document.querySelector(`#${seatno}`).classList.add("text-success");
+
+
+
+            // var movie1array = JSON.parse(localStorage.getItem("seatformovie1"));
+            // var movie2array = JSON.parse(localStorage.getItem("seatformovie2"));
+            // var movie3array = JSON.parse(localStorage.getItem("seatformovie3"));
+
+
+            if (movieSelecting.value == "movie1") {
+                mymovie = "movie1";
+
+
+            }
+
+            if (movieSelecting.value == "movie2") {
+
+                mymovie = "movie2";
+
+
+            }
+
+            if (movieSelecting.value == "movie3") {
+
+                mymovie = "movie3";
+
+
+            }
+
+            if (document.querySelector(`#${seatno}`).classList.contains("text-danger")) {
+
+            } else {
+
+                var movie1arr = [];
+                if (mymovie == "movie1") {
+
+                    var movie1array = JSON.parse(localStorage.getItem("seatformovie1"));
+                    if (movie1array == null) {
+                        movie1arr.push(seatno);
+                        localStorage.setItem("seatformovie1", JSON.stringify(movie1arr));
+                    } else {
+                        movie1array.push(seatno);
+                        localStorage.setItem("seatformovie1", JSON.stringify(movie1array));
+
+                    }
+                }
+                if (mymovie == "movie2") {
+
+                    var movie2array = JSON.parse(localStorage.getItem("seatformovie2"));
+                    if (movie2array == null) {
+                        movie1arr.push(seatno);
+                        localStorage.setItem("seatformovie2", JSON.stringify(movie1arr));
+                    } else {
+                        movie2array.push(seatno);
+                        localStorage.setItem("seatformovie2", JSON.stringify(movie2array));
+
+                    }
+                }
+                if (mymovie == "movie3") {
+
+                    var movie3array = JSON.parse(localStorage.getItem("seatformovie3"));
+                    if (movie3array == null) {
+                        movie1arr.push(seatno);
+                        localStorage.setItem("seatformovie3", JSON.stringify(movie1arr));
+                    } else {
+                        movie3array.push(seatno);
+                        localStorage.setItem("seatformovie3", JSON.stringify(movie3array));
+
+                    }
+                }
+
+            }
+
+
+
+        }
+        btnbooking.addEventListener("click", function () {
+            var a = 0;
+            for (var index = 1; index < 53; index++) {
+
+                if (document.querySelector(`#s${index}`).classList.contains("text-success")) {
+                    document.querySelector(`#s${index}`).classList.add("text-danger");
+                    a++;
+                }
+
+            }
+            totalseat = a;
+            document.querySelector("#output").innerHTML = `<div class="alert alert-success mt-4">You have selected ${totalseat} Seats, and Total Bill is ${totalseat * 100}.</div>`;
+
+
+        });
+
+
+
+    </script>
+
+</body>
+
+</html>
